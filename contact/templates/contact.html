@@ -1,21 +1,9 @@
 {% extends 'base.html' %}
-{% block styles %}
-<style>
-    .jumbotron {
-        text-align: center;
-    }
-</style>
-{% endblock %}
 
-{% block jumbotron %}
-<div class="jumbotron">
-        <h1>Contact</h1>
-        <form method="POST" action="">{% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="submit form" class="btn btn-default" />
-        </form>
-</div>
-{% endblock %}
 {% block content %}
-
+<h1>Contact</h1>
+<form method="POST" action="">{% csrf_token %}
+    {{ form.as_p }}
+<input type="submit" value="submit form" class="btn btn-default"/>
+</form>
 {% endblock %}
