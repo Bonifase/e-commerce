@@ -34,7 +34,7 @@ python manage.py runserver
 
 ## Meta
 
-Bonifase – [Bonifase](https://twitter.com/BonifaseOrwa?lang=en)
+[Bonifase](https://twitter.com/BonifaseOrwa?lang=en)
 
 [https://github.com/Bonifase/e-commerce](https://github.com/dbader/)
 
