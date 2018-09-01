@@ -2,10 +2,6 @@
 
 > An e-commerce store with the ability to accept and process online customer payments.
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/7bd10832894d14f11f58/maintainability)](https://codeclimate.com/github/rails/rails/maintainability)
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 ## Installation
 
 OS X & Linux:
