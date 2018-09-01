@@ -1,4 +1,4 @@
-# e-mommerce
+# e-commerce
 
 > An e-commerce store with the ability to accept and process online customer payments.
 
