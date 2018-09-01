@@ -2,7 +2,7 @@
 
 > An e-commerce store with the ability to accept and process online customer payments.
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/d90e0f308dca4ed4cb90/maintainability)](https://codeclimate.com/github/rails/rails/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/7bd10832894d14f11f58/maintainability)](https://codeclimate.com/github/rails/rails/maintainability)
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
@@ -51,6 +51,6 @@ python manage.py runserver
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/datadog-metrics
 [npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/Bonifase/WeConnectV3/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
 [wiki]: https://github.com/yourname/yourproject/wiki
