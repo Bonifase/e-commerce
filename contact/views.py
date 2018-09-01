@@ -17,7 +17,7 @@ def contact(request):
         name = form.cleaned_data['name']
         comment = form.cleaned_data['comment']
         subject = 'Message from me'
-        message = '%s %s' %(name, comment)
+        message = '%s %s' % (name, comment)
         emailFrom = form.cleaned_data['email']
         emailTo = [settings.EMAIL_HOST_USER]
         send_mail(subject, message, emailFrom, emailTo, fail_silently=False,)
