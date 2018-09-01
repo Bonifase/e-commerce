@@ -23,7 +23,11 @@ def contact(request):
         send_mail(subject, message, emailFrom, emailTo, fail_silently=False,)
         title = 'Thanks!'
         confirm_message = 'Thanks for the message. We will get back to you'
-        form = None 
-    context = {'title': title, 'form': form, 'confirm_message': confirm_message, }
+        form = None
+    context = {
+        'title': title,
+        'form': form,
+        'confirm_message': confirm_message, }
     template = 'contact.html'
     return render(request, template, context)
+    
