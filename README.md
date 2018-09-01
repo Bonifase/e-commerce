@@ -6,10 +6,6 @@
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-One to two paragraph statement about your product and what it does.
-
-![](header.png)
-
 ## Installation
 
 OS X & Linux:
@@ -17,12 +13,6 @@ OS X & Linux:
 ```sh
 pip install django --save
 ```
-
-## Usage example
-
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
-
-_For more examples and usage, please refer to the [Wiki][wiki]._
 
 ## Development setup
 
