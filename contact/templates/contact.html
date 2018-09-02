@@ -8,7 +8,10 @@
 {% if form %}
 <form method="POST" action="">{% csrf_token %}
     {{ form.as_p }}
-<input type="submit" value="submit form" class="btn btn-default"/>
+  <div class="button">
+        <input type="submit" value="submit form" class="button"/>
+  </div>
+  
 </form>
 {% endif %}
 {% endblock %}
