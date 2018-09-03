@@ -20,13 +20,19 @@
             <li class="nav-item"  class="nav-item" {% if request.path == contact %} class="active" {% endif %}>
                 <a class="nav-link" href="{% url 'contact' %}">Contacts</a>
             </li>
+            <li class="nav-item"  class="nav-item" {% if request.path == contact %} class="active" {% endif %}>
+                    <a class="nav-link" href="{% url 'contact' %}">Contacts</a>
+                </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">Account</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    {% if not request.user.is_authenticated %}
                     <a class="dropdown-item" href="{% url 'account_login' %}">Login</a>
                     <a class="dropdown-item" href="{% url 'account_signup' %}">Signup</a>
+                    {% else %}
                     <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
+                    {% endif %}
                 </div>
             </li>
         </ul>
