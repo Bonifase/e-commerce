@@ -40,10 +40,11 @@
     <script>
         window.jQuery || document.write('<script src="{% static "javascript/jquery-slim.min.js" %}"><\/script>')
     </script>
+    <script src="https://js.stripe.com/v3/"></script>
     <script src='{% static "javascript/popper.min.js" %}'></script>
     <script src='{% static "javascript/bootstrap.min.js" %}'></script>
-</div>
-<footer>
+    </div>
+    <footer>
         <div class= "navbar navbar-inverse navbar-static-bottom" role="navigation">
             <div class="navbar-text pull-left">
             </div>
@@ -58,6 +59,16 @@
             </div>
         </div>	
         </footer>
+    {% block script %}
+
+    {% endblock %}
+    <script>
+$(document.ready(function(){
+{% block jquery %}
+{% endblock %}
+});
+    </script>
+
 </body>
 
 </html>
