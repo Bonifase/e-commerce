@@ -150,7 +150,7 @@ if DEBUG:
         os.path.dirname(BASE_DIR), "static", "static-only")
     MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "media")
     STATICFILES_DIRS = [
-        os.path.join(os.path.dirname(BASE_DIR), "static", "static")]
+        os.path.join(os.path.dirname(BASE_DIR), "ecommerce/static", "static")]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 SITE_ID = 1
