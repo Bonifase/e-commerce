@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 
 {% block styles %}
 <style>
@@ -11,14 +12,12 @@
 {% block jumbotron %}
 <header>
     <div class="header-logo-wrapper">
-        <img src="/media/img/logo.png" class="header-logo">
-        </div>
+            <a href="#"><img src="{% static 'img/logo.png' %}" class="img-responsive"/></a>
         <h1>Coming Soon</h1>
-        <img src="img/pattern.png" class="header-background">
         </header>
         <section class="what-its-about">
         <aside class="about-icons-wrapper">
-          <img src="img/about-icons-org.svg" class="about-icons">
+          <!-- <img src="#" class="about-icons"> -->
         </aside>
         <p>MAKING ONLINE PAYMENT SIMPLE</p>
       </section>
@@ -33,9 +32,7 @@
           <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
         </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo </p>
-          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+            <a href="#"><img src="{% static 'img/logo.png' %}" class="img-responsive"/></a>    
        </div>
         <div class="col-md-4">
             {% if request.user.is_authenticated %}
