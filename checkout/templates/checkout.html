@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block script %}
+  <script type="text/javascript">
+    Stripe.setPublishableKey('pk_test_TYooMQauvdEDq54NiTphI7jx')
+  </script>
+{% endblock %}
+{% block jquery %}
+  $(function()) {
+      var $form = $('#payment-form"');
+      $form.submit(function(event){
+          $form.find('.submit').prop('disabled', true);
+          Stripe.card.createToken($form, stripeResponseHandler);
+          return false;
+      });
+  });
+{% endblock %}
+{% block content %}
+<div class="row">
+<div class="col-sm-6 col-sm-offset-3" style="margin: auto;">
+<form class="form" action="" method="post" id="payment-form"> {% csrf_token %}
+    <div class="form-row">
+      <label>
+        <span>Card Number</span>
+        <input class="form-control" type="text" size="20" data-stripe="number">
+      </label>
+    </div>
+    <div class="form-row">
+        <label>
+            <span>Expiration (MM/YY)</span>
+            <input type="text" size="2" data-stripe="exp_month">
+        </label>
+        <span>/</span>
+        <input type="text" size="2" data-stripe="exp_year">
+    </div>
+    <div class="form-row">
+        <label>
+            <span>CVS</span>
+            <input class="form-control" type="text" size="4" data-stripe="cvs">
+        </label>
+    </div>
+    <input type="submit" class="btn btn-success" value="Submit Payment">
+  </form>
+</div>
+</div>
+{% endblock %}
